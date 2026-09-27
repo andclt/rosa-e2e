@@ -1,8 +1,8 @@
-report_date: '2026-09-26'
-generated_at: '2026-09-26T14:37:09Z'
-overall_pass_rate: 70
-gating_pass_rate: 76
-non_gating_pass_rate: 62
+report_date: '2026-09-27'
+generated_at: '2026-09-27T14:30:00Z'
+overall_pass_rate: 69
+gating_pass_rate: 74
+non_gating_pass_rate: 64
 job_registry_url: https://raw.githubusercontent.com/openshift-online/rosa-e2e/main/configs/ci-status-jobs.yaml
 categories:
 - id: rosa-e2e-stg
@@ -25,12 +25,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id001
       id: 97412673-7d28-430b-bdee-ce3d1eb702b2
       name: ROSA CI
       slack_channel: wg-rosa-ci-enhancement
       slack_alias: rosa-ci-team
-    labels:
+    labels: &id002
     - ci-failure
     - rosa-e2e
   - name: HCP 4.20
@@ -47,14 +47,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP 4.21
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-hcp-e2e-staging-stable-4-21
     gating: true
@@ -69,14 +63,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP 4.22
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-hcp-e2e-staging-stable-4-22
     gating: true
@@ -91,14 +79,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP 5.0
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-hcp-e2e-staging-nightly-5-0
     gating: true
@@ -113,14 +95,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP FIPS 4.19
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-hcp-fips-e2e-staging-stable-4-19
     gating: true
@@ -131,18 +107,12 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 1
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP FIPS 4.20
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-hcp-fips-e2e-staging-stable-4-20
     gating: true
@@ -157,14 +127,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP FIPS 4.21
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-hcp-fips-e2e-staging-stable-4-21
     gating: true
@@ -175,18 +139,12 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 1
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP FIPS 4.22
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-hcp-fips-e2e-staging-stable-4-22
     gating: true
@@ -197,18 +155,12 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 1
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP FIPS 5.0
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-hcp-fips-e2e-staging-nightly-5-0
     gating: true
@@ -219,18 +171,12 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 1
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS 4.19
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-classic-sts-e2e-staging-stable-4-19
     gating: true
@@ -245,14 +191,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS 4.20
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-classic-sts-e2e-staging-stable-4-20
     gating: true
@@ -267,14 +207,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS 4.21
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-classic-sts-e2e-staging-stable-4-21
     gating: true
@@ -289,14 +223,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS 4.22
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-classic-sts-e2e-staging-stable-4-22
     gating: true
@@ -311,14 +239,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS FIPS 4.19
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-classic-sts-fips-e2e-staging-stable-4-19
     gating: true
@@ -329,18 +251,12 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 1
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS FIPS 4.20
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-classic-sts-fips-e2e-staging-stable-4-20
     gating: true
@@ -351,18 +267,12 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 1
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS FIPS 4.21
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-classic-sts-fips-e2e-staging-stable-4-21
     gating: true
@@ -377,14 +287,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS FIPS 4.22
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-rosa-classic-sts-fips-e2e-staging-stable-4-22
     gating: true
@@ -399,14 +303,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: OSD GCP 4.22
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-osd-gcp-e2e-staging-stable-4-22
     gating: true
@@ -421,14 +319,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: OSD GCP FIPS 4.22
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-periodics-osd-gcp-fips-e2e-staging-stable-4-22
     gating: true
@@ -443,14 +335,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP Upgrade Y-3
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-upgrade-rosa-hcp-upgrade-staging-y-minus-3
     gating: true
@@ -465,14 +351,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP Upgrade Y-2
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-upgrade-rosa-hcp-upgrade-staging-y-minus-2
     gating: true
@@ -487,14 +367,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: HCP Upgrade Y-1
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-upgrade-rosa-hcp-upgrade-staging-y-minus-1
     gating: true
@@ -509,14 +383,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS Upgrade Y-3
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-upgrade-rosa-classic-sts-upgrade-staging-y-minus-3
     gating: true
@@ -531,14 +399,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS Upgrade Y-2
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-upgrade-rosa-classic-sts-upgrade-staging-y-minus-2
     gating: true
@@ -553,14 +415,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
   - name: STS Upgrade Y-1
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-upgrade-rosa-classic-sts-upgrade-staging-y-minus-1
     gating: true
@@ -575,27 +431,21 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - rosa-e2e
+    team: *id001
+    labels: *id002
 - id: capa-e2e-stg
   name: CAPA E2E STG
-  pass_rate: 38
+  pass_rate: 46
   trend: improving
-  health: red
+  health: yellow
   jobs:
   - name: CAPA E2E Smoke
     prow_job: periodic-ci-openshift-online-rosa-e2e-main_capa-e2e-capa-e2e
     gating: false
-    pass_count: 4
-    fail_count: 6
+    pass_count: 5
+    fail_count: 5
     total: 10
-    pass_rate: 40
+    pass_rate: 50
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -603,12 +453,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id003
       id: 47afa339-b9ce-44bc-bd25-3e5b7e0808dd
       name: '[ROSA] CAPA'
       slack_channel: team-rosa-capa
       slack_alias: rosa-capa-team
-    labels:
+    labels: &id004
     - ci-failure
     - capa-e2e
   - name: CAPA E2E Full Lifecycle
@@ -625,18 +475,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 47afa339-b9ce-44bc-bd25-3e5b7e0808dd
-      name: '[ROSA] CAPA'
-      slack_channel: team-rosa-capa
-      slack_alias: rosa-capa-team
-    labels:
-    - ci-failure
-    - capa-e2e
+    team: *id003
+    labels: *id004
 - id: rosa-gap-analysis
   name: GAP E2E
-  pass_rate: 66
-  trend: improving
+  pass_rate: 71
+  trend: stable
   health: yellow
   jobs:
   - name: GAP 4.19
@@ -653,12 +497,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id005
       id: 97412673-7d28-430b-bdee-ce3d1eb702b2
       name: ROSA CI
       slack_channel: wg-rosa-ci-enhancement
       slack_alias: rosa-ci-team
-    labels:
+    labels: &id006
     - ci-failure
     - gap-analysis
   - name: GAP 4.20
@@ -675,21 +519,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - gap-analysis
+    team: *id005
+    labels: *id006
   - name: GAP 4.21
     prow_job: periodic-ci-openshift-online-rosa-gap-analysis-main-periodics-nightly-4-21
     gating: false
-    pass_count: 5
-    fail_count: 2
+    pass_count: 6
+    fail_count: 1
     total: 7
-    pass_rate: 71
+    pass_rate: 86
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -697,21 +535,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - gap-analysis
+    team: *id005
+    labels: *id006
   - name: GAP 4.22
     prow_job: periodic-ci-openshift-online-rosa-gap-analysis-main-periodics-nightly-4-22
     gating: false
-    pass_count: 3
-    fail_count: 4
+    pass_count: 4
+    fail_count: 3
     total: 7
-    pass_rate: 43
+    pass_rate: 57
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -719,14 +551,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - gap-analysis
+    team: *id005
+    labels: *id006
   - name: GAP 5.0
     prow_job: periodic-ci-openshift-online-rosa-gap-analysis-main-periodics-nightly-5-0
     gating: false
@@ -741,27 +567,21 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - gap-analysis
+    team: *id005
+    labels: *id006
 - id: ocm-fvt-hcp-stg
   name: OCM FVT HCP STG
-  pass_rate: 71
+  pass_rate: 69
   trend: degrading
   health: yellow
   jobs:
   - name: HCP AD
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-ad-staging-main
     gating: true
-    pass_count: 4
-    fail_count: 3
+    pass_count: 3
+    fail_count: 4
     total: 7
-    pass_rate: 57
+    pass_rate: 43
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -769,12 +589,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id007
       id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
       name: ROSA Coffee Focaccia
       slack_channel: rosa-coffee-focaccia
       slack_alias: team-rosa-coffee
-    labels:
+    labels: &id008
     - ci-failure
     - ocm-fvt
     - clusters-service
@@ -792,15 +612,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP AMD64
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-amd64-staging-main
     gating: true
@@ -815,15 +628,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP AMD64 Upgrade
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-amd64-upgrade-staging-main
     gating: true
@@ -838,15 +644,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP ARM
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-arm-staging-main
     gating: true
@@ -861,15 +660,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Autonode
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-autonode-staging-main
     gating: true
@@ -884,15 +676,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP E2E
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-hcp-e2e-staging-main
     gating: true
@@ -907,22 +692,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP PL
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-pl-staging-main
     gating: true
-    pass_count: 3
-    fail_count: 4
+    pass_count: 4
+    fail_count: 3
     total: 7
-    pass_rate: 43
+    pass_rate: 57
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -930,15 +708,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Shared VPC
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-shared-vpc-staging-main
     gating: true
@@ -953,15 +724,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Upgrade
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-upgrade-staging-main
     gating: true
@@ -976,15 +740,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Y-Upgrade
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-y-upgrade-staging-main
     gating: true
@@ -999,15 +756,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP n-X Y-Upgrade
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-nx-y-upgrade-staging-main
     gating: false
@@ -1022,15 +772,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Zero Egress
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-zero-egress-staging-main
     gating: true
@@ -1045,15 +788,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Zero Egress Upgrade
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-zero-egress-upgrade-staging-main
     gating: true
@@ -1068,15 +804,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Access Request
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-access-request-staging-main
     gating: true
@@ -1091,15 +820,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Sanity
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-sanity-staging-main
     gating: true
@@ -1114,15 +836,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Sanity Jira
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-sanity-jira-staging-main
     gating: false
@@ -1137,38 +852,25 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Access Request OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-access-request-ocp5-staging-main
     gating: true
-    pass_count: 4
+    pass_count: 6
     fail_count: 0
-    total: 4
+    total: 6
     pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
+    failure_classification: OCP 5.0 nightly operator instability
     consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failing_tests: &id009
+    - CreateClusterByYAMLProfile @au_xueli
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
   - name: HCP AD OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-ad-ocp5-staging-main
     gating: true
@@ -1178,183 +880,31 @@ categories:
     pass_rate: 75
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
+    failure_classification: OCP 5.0 nightly operator instability
     consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
   - name: HCP Adobe OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-adobe-ocp5-staging-main
     gating: true
     pass_count: 0
-    fail_count: 5
-    total: 5
+    fail_count: 6
+    total: 6
     pass_rate: 0
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failure_classification: OCP 5.0 nightly operator instability
+    consecutive_failures: 6
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
   - name: HCP AMD64 OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-amd64-ocp5-staging-main
-    gating: true
-    pass_count: 2
-    fail_count: 2
-    total: 4
-    pass_rate: 50
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
-  - name: HCP AMD64 Upgrade OCP5
-    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-amd64-upgrade-ocp5-staging-main
-    gating: true
-    pass_count: 5
-    fail_count: 0
-    total: 5
-    pass_rate: 100
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
-  - name: HCP ARM OCP5
-    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-arm-ocp5-staging-main
-    gating: true
-    pass_count: 3
-    fail_count: 1
-    total: 4
-    pass_rate: 75
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
-  - name: HCP Autonode OCP5
-    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-autonode-ocp5-staging-main
-    gating: true
-    pass_count: 0
-    fail_count: 4
-    total: 4
-    pass_rate: 0
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
-  - name: HCP E2E OCP5
-    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-hcp-e2e-ocp5-staging-main
-    gating: true
-    pass_count: 0
-    fail_count: 4
-    total: 4
-    pass_rate: 0
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
-  - name: HCP n-X Y-Upgrade OCP5
-    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-nx-y-upgrade-ocp5-staging-main
-    gating: true
-    pass_count: 0
-    fail_count: 4
-    total: 4
-    pass_rate: 0
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
-  - name: HCP PL OCP5
-    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-pl-ocp5-staging-main
     gating: true
     pass_count: 3
     fail_count: 2
@@ -1362,43 +912,125 @@ categories:
     pass_rate: 60
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
+    failure_classification: OCP 5.0 nightly operator instability
     consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
-  - name: HCP Sanity OCP5
-    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-sanity-ocp5-staging-main
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
+  - name: HCP AMD64 Upgrade OCP5
+    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-amd64-upgrade-ocp5-staging-main
     gating: true
-    pass_count: 4
+    pass_count: 6
     fail_count: 0
-    total: 4
+    total: 6
     pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
+    failure_classification: OCP 5.0 nightly operator instability
     consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
+  - name: HCP ARM OCP5
+    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-arm-ocp5-staging-main
+    gating: true
+    pass_count: 5
+    fail_count: 1
+    total: 6
+    pass_rate: 83
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: OCP 5.0 nightly operator instability
+    consecutive_failures: 0
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
+  - name: HCP Autonode OCP5
+    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-autonode-ocp5-staging-main
+    gating: true
+    pass_count: 0
+    fail_count: 6
+    total: 6
+    pass_rate: 0
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: OCP 5.0 nightly operator instability
+    consecutive_failures: 6
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
+  - name: HCP E2E OCP5
+    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-hcp-e2e-ocp5-staging-main
+    gating: true
+    pass_count: 0
+    fail_count: 6
+    total: 6
+    pass_rate: 0
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: OCP 5.0 nightly operator instability
+    consecutive_failures: 6
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
+  - name: HCP n-X Y-Upgrade OCP5
+    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-nx-y-upgrade-ocp5-staging-main
+    gating: true
+    pass_count: 0
+    fail_count: 6
+    total: 6
+    pass_rate: 0
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: OCP 5.0 nightly operator instability
+    consecutive_failures: 6
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
+  - name: HCP PL OCP5
+    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-pl-ocp5-staging-main
+    gating: true
+    pass_count: 3
+    fail_count: 3
+    total: 6
+    pass_rate: 50
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: OCP 5.0 nightly operator instability
+    consecutive_failures: 0
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
+  - name: HCP Sanity OCP5
+    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-sanity-ocp5-staging-main
+    gating: true
+    pass_count: 5
+    fail_count: 0
+    total: 5
+    pass_rate: 100
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: OCP 5.0 nightly operator instability
+    consecutive_failures: 0
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
   - name: HCP Sanity Jira OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-sanity-jira-ocp5-staging-main
     gating: false
@@ -1408,26 +1040,19 @@ categories:
     pass_rate: 0
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failure_classification: OCP 5.0 nightly operator instability
+    consecutive_failures: 1
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
   - name: HCP Resource Cleaner OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-ocp5-resource-cleaner
     gating: false
-    pass_count: 3
+    pass_count: 4
     fail_count: 0
-    total: 3
+    total: 4
     pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
@@ -1436,143 +1061,101 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id007
+    labels: *id008
   - name: HCP Shared VPC OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-shared-vpc-ocp5-staging-main
     gating: true
-    pass_count: 2
+    pass_count: 3
     fail_count: 6
-    total: 8
-    pass_rate: 25
+    total: 9
+    pass_rate: 33
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
+    failure_classification: OCP 5.0 nightly operator instability
     consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
   - name: HCP Upgrade OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-upgrade-ocp5-staging-main
     gating: true
     pass_count: 0
-    fail_count: 4
-    total: 4
+    fail_count: 5
+    total: 5
     pass_rate: 0
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failure_classification: OCP 5.0 nightly operator instability
+    consecutive_failures: 5
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
   - name: HCP Y-Upgrade OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-y-upgrade-ocp5-staging-main
     gating: true
-    pass_count: 4
+    pass_count: 5
     fail_count: 0
-    total: 4
+    total: 5
     pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
+    failure_classification: OCP 5.0 nightly operator instability
     consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
   - name: HCP Zero Egress OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-zero-egress-ocp5-staging-main
     gating: true
     pass_count: 2
-    fail_count: 3
-    total: 5
-    pass_rate: 40
+    fail_count: 4
+    total: 6
+    pass_rate: 33
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
+    failure_classification: OCP 5.0 nightly operator instability
     consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
   - name: HCP Zero Egress Upgrade OCP5
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-staging-ocm-fvt-periodic-cs-rosa-hcp-zero-egr-upg-ocp5-staging-main
     gating: true
-    pass_count: 4
+    pass_count: 5
     fail_count: 0
-    total: 4
+    total: 5
     pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
+    failure_classification: OCP 5.0 nightly operator instability
     consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failing_tests: *id009
+    failure_summary: 'Cluster operators not healthy after OCP 5.0 install: dns, image-registry, ingress, insights, monitoring, service-ca not available'
+    diagnosis: OCP 5.0 candidate nightly - operators failing to become ready. Product bug in OCP 5.0.
+    team: *id007
+    labels: *id008
 - id: ocm-fvt-hcp-int
   name: OCM FVT HCP INT
-  pass_rate: 42
+  pass_rate: 45
   trend: degrading
   health: yellow
   jobs:
   - name: HCP Autonode
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-autonode-integration-main
     gating: false
-    pass_count: 3
-    fail_count: 3
-    total: 6
-    pass_rate: 50
+    pass_count: 5
+    fail_count: 2
+    total: 7
+    pass_rate: 71
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -1580,40 +1163,17 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id010
       id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
       name: ROSA Coffee Focaccia
       slack_channel: rosa-coffee-focaccia
       slack_alias: team-rosa-coffee
-    labels:
+    labels: &id011
     - ci-failure
     - ocm-fvt
     - clusters-service
   - name: HCP Backup Restore
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-rest-integration-main
-    gating: false
-    pass_count: 4
-    fail_count: 3
-    total: 7
-    pass_rate: 57
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
-  - name: HCP Backup Scale
-    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-scale-integration-main
     gating: false
     pass_count: 3
     fail_count: 4
@@ -1626,15 +1186,24 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id010
+    labels: *id011
+  - name: HCP Backup Scale
+    prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-scale-integration-main
+    gating: false
+    pass_count: 2
+    fail_count: 5
+    total: 7
+    pass_rate: 29
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: ''
+    consecutive_failures: 0
+    failing_tests: []
+    failure_summary: ''
+    diagnosis: ''
+    team: *id010
+    labels: *id011
   - name: HCP Backup CP Up
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-cp-up-ip-integration-main
     gating: false
@@ -1649,22 +1218,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id010
+    labels: *id011
   - name: HCP Backup CP In Progress
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-backup-cpupzfin-integration-main
     gating: false
-    pass_count: 3
-    fail_count: 4
+    pass_count: 4
+    fail_count: 3
     total: 7
-    pass_rate: 43
+    pass_rate: 57
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -1672,38 +1234,24 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id010
+    labels: *id011
   - name: HCP AD Regional
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-ad-integration-regional-main
     gating: false
-    pass_count: 1
+    pass_count: 2
     fail_count: 5
-    total: 6
-    pass_rate: 17
-    last_failure_url: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-hcp-integration-ocm-fvt-periodic-cs-rosa-hcp-ad-integration-regional-main/2103395122614898688
-    last_failure_date: '2026-09-25'
-    failure_classification: env/config issue
+    total: 7
+    pass_rate: 29
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: ''
     consecutive_failures: 0
     failing_tests: []
-    failure_summary: Cluster creation timeout 30min in ap-southeast-1; x509 cert error for KMS provider SA
-    diagnosis: Cluster stayed "installing" — KMS SA token creation failed with x509 unknown authority on dedicated-v2 shard. Recovered Sep 26.
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failure_summary: ''
+    diagnosis: ''
+    team: *id010
+    labels: *id011
 - id: ocm-fvt-hcp-prd
   name: OCM FVT HCP PROD
   pass_rate: 100
@@ -1735,7 +1283,7 @@ categories:
     - clusters-service
 - id: ocm-fvt-classic-stg
   name: OCM FVT Classic STG
-  pass_rate: 72
+  pass_rate: 70
   trend: degrading
   health: yellow
   jobs:
@@ -1753,22 +1301,22 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id012
       id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
       name: ROSA Coffee Focaccia
       slack_channel: rosa-coffee-focaccia
       slack_alias: team-rosa-coffee
-    labels:
+    labels: &id013
     - ci-failure
     - ocm-fvt
     - clusters-service
   - name: STS AD
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-classic-staging-ocm-fvt-periodic-cs-rosa-sts-ad-staging-main
     gating: true
-    pass_count: 6
-    fail_count: 1
+    pass_count: 5
+    fail_count: 2
     total: 7
-    pass_rate: 86
+    pass_rate: 71
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -1776,15 +1324,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id012
+    labels: *id013
   - name: STS PL
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-classic-staging-ocm-fvt-periodic-cs-rosa-sts-pl-staging-main
     gating: true
@@ -1799,15 +1340,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id012
+    labels: *id013
   - name: STS Shared VPC
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-classic-staging-ocm-fvt-periodic-cs-rosa-sts-shared-vpc-staging-main
     gating: true
@@ -1822,15 +1356,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id012
+    labels: *id013
   - name: STS Custom Channel
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-classic-staging-ocm-fvt-periodic-cs-rosa-classic-cust-chan-staging-main
     gating: true
@@ -1845,22 +1372,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id012
+    labels: *id013
   - name: STS Upgrade
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-classic-staging-ocm-fvt-periodic-cs-rosa-sts-upgrade-staging-main
     gating: true
-    pass_count: 3
-    fail_count: 4
+    pass_count: 2
+    fail_count: 5
     total: 7
-    pass_rate: 43
+    pass_rate: 29
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -1868,15 +1388,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id012
+    labels: *id013
   - name: STS n-X Y-Upgrade
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-classic-staging-ocm-fvt-periodic-cs-rosa-sts-nx-y-upgrade-staging-main
     gating: true
@@ -1891,15 +1404,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id012
+    labels: *id013
   - name: OCM Resources
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-classic-staging-ocm-fvt-periodic-cs-ocm-resources-staging-main
     gating: true
@@ -1914,15 +1420,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id012
+    labels: *id013
   - name: OSD RH AWS
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-classic-staging-ocm-fvt-periodic-cs-osd-rh-aws-staging-main
     gating: true
@@ -1937,28 +1436,21 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id012
+    labels: *id013
 - id: ocm-fvt-classic-int
   name: OCM FVT Classic INT
-  pass_rate: 95
-  trend: stable
+  pass_rate: 90
+  trend: degrading
   health: green
   jobs:
   - name: STS AD
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-rosa-classic-integration-ocm-fvt-periodic-cs-rosa-sts-ad-integration-main
     gating: false
-    pass_count: 6
-    fail_count: 1
+    pass_count: 5
+    fail_count: 2
     total: 7
-    pass_rate: 86
+    pass_rate: 71
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -1966,12 +1458,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id014
       id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
       name: ROSA Coffee Focaccia
       slack_channel: rosa-coffee-focaccia
       slack_alias: team-rosa-coffee
-    labels:
+    labels: &id015
     - ci-failure
     - ocm-fvt
     - clusters-service
@@ -1989,15 +1481,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id014
+    labels: *id015
   - name: OSD CCS AWS AD
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-osd-aws-integration-ocm-fvt-periodic-cs-osd-ccs-aws-ad-integration-main
     gating: false
@@ -2012,28 +1497,21 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id014
+    labels: *id015
 - id: ocm-fvt-gcp-stg
   name: OCM FVT GCP STG
-  pass_rate: 61
-  trend: improving
+  pass_rate: 57
+  trend: stable
   health: yellow
   jobs:
   - name: GCP CCS AD
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-osd-gcp-staging-ocm-fvt-periodic-cs-osd-ccs-gcp-ad-staging-main
     gating: true
-    pass_count: 4
+    pass_count: 3
     fail_count: 4
-    total: 8
-    pass_rate: 50
+    total: 7
+    pass_rate: 43
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2041,12 +1519,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id016
       id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
       name: ROSA Coffee Focaccia
       slack_channel: rosa-coffee-focaccia
       slack_alias: team-rosa-coffee
-    labels:
+    labels: &id017
     - ci-failure
     - ocm-fvt
     - clusters-service
@@ -2064,22 +1542,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id016
+    labels: *id017
   - name: GCP Non-Cross-Proj WIF
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-osd-gcp-staging-ocm-fvt-periodic-cs-osd-gcp-non-cross-proj-wif-staging-main
     gating: true
-    pass_count: 3
+    pass_count: 4
     fail_count: 3
-    total: 6
-    pass_rate: 50
+    total: 7
+    pass_rate: 57
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2087,22 +1558,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id016
+    labels: *id017
   - name: GCP Root Disk
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-osd-gcp-staging-ocm-fvt-periodic-cs-osd-gcp-root-disk-staging-main
     gating: true
-    pass_count: 8
-    fail_count: 1
-    total: 9
-    pass_rate: 89
+    pass_count: 7
+    fail_count: 0
+    total: 7
+    pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2110,38 +1574,24 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    team: *id016
+    labels: *id017
   - name: GCP WIF SV
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-osd-gcp-staging-ocm-fvt-periodic-cs-osd-gcp-wif-sv-staging-main
     gating: true
-    pass_count: 2
-    fail_count: 4
-    total: 6
-    pass_rate: 33
+    pass_count: 1
+    fail_count: 6
+    total: 7
+    pass_rate: 14
     last_failure_url: ''
     last_failure_date: ''
-    failure_classification: ''
+    failure_classification: GCP provisioning timeout
     consecutive_failures: 0
     failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: ec74d716-af36-4b3c-950f-f79213d08f71-3174
-      name: ROSA Coffee Focaccia
-      slack_channel: rosa-coffee-focaccia
-      slack_alias: team-rosa-coffee
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - clusters-service
+    failure_summary: Failed to provision control-plane machines within 15m0s, master-2 stuck in Pending
+    diagnosis: GCP machine provisioning failure. cluster_deployment.ProvisionFailed=True. Env/config issue.
+    team: *id016
+    labels: *id017
 - id: ocm-fvt-osdfm-int
   name: OCM FVT OSDFM INT
   pass_rate: 29
@@ -2162,12 +1612,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id018
       id: bd8a0aae-863d-4ea3-a697-028b5043fc08
       name: ROSA Fleet Manager
       slack_channel: team-rosa-fleet-manager
       slack_alias: team-rosa-fleet-manager
-    labels:
+    labels: &id019
     - ci-failure
     - ocm-fvt
     - osd-fleet-manager
@@ -2178,22 +1628,15 @@ categories:
     fail_count: 1
     total: 1
     pass_rate: 0
-    last_failure_url: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-osdfm-integration-ocm-fvt-periodic-osdfm-mc-autoscaling-integration/2103062189387550720
-    last_failure_date: '2026-09-24'
-    failure_classification: env/config issue
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: ''
     consecutive_failures: 1
     failing_tests: []
-    failure_summary: No service cluster found in qe-sc-scale sector with sc-watch-ignore=true in eu-west-1
-    diagnosis: Test requires specific SC setup in integration env. Not a code bug.
-    team:
-      id: bd8a0aae-863d-4ea3-a697-028b5043fc08
-      name: ROSA Fleet Manager
-      slack_channel: team-rosa-fleet-manager
-      slack_alias: team-rosa-fleet-manager
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - osd-fleet-manager
+    failure_summary: ''
+    diagnosis: ''
+    team: *id018
+    labels: *id019
   - name: OSDFM SC Autoscaling
     prow_job: periodic-ci-openshift-online-rosa-e2e-main-ocm-fvt-osdfm-integration-ocm-fvt-periodic-osdfm-sc-autoscaling-integration
     gating: false
@@ -2204,19 +1647,12 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 1
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: bd8a0aae-863d-4ea3-a697-028b5043fc08
-      name: ROSA Fleet Manager
-      slack_channel: team-rosa-fleet-manager
-      slack_alias: team-rosa-fleet-manager
-    labels:
-    - ci-failure
-    - ocm-fvt
-    - osd-fleet-manager
+    team: *id018
+    labels: *id019
 - id: ocm-fvt-osdfm-stg
   name: OCM FVT OSDFM STG
   pass_rate: 50
@@ -2249,7 +1685,7 @@ categories:
 - id: hypershift-ci
   name: HyperShift CI
   pass_rate: 71
-  trend: degrading
+  trend: stable
   health: yellow
   jobs:
   - name: INT HCP 4.22
@@ -2266,12 +1702,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id020
       id: a5267ed5-eaa8-4cd6-90e3-d0ce145dbfbf
       name: ROSA HCP Platform
       slack_channel: team-rosa-hcp-platform
       slack_alias: team-rosa-hcp-platform
-    labels:
+    labels: &id021
     - ci-failure
     - hypershift-ci
   - name: STG HCP 4.22
@@ -2288,18 +1724,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a5267ed5-eaa8-4cd6-90e3-d0ce145dbfbf
-      name: ROSA HCP Platform
-      slack_channel: team-rosa-hcp-platform
-      slack_alias: team-rosa-hcp-platform
-    labels:
-    - ci-failure
-    - hypershift-ci
+    team: *id020
+    labels: *id021
 - id: hcp-conformance
   name: HCP Conformance
-  pass_rate: 60
-  trend: improving
+  pass_rate: 62
+  trend: stable
   health: yellow
   jobs:
   - name: HCP 4.19
@@ -2316,12 +1746,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id022
       id: 97412673-7d28-430b-bdee-ce3d1eb702b2
       name: ROSA CI
       slack_channel: wg-rosa-ci-enhancement
       slack_alias: rosa-ci-team
-    labels:
+    labels: &id023
     - ci-failure
     - conformance
   - name: HCP 4.20
@@ -2331,30 +1761,22 @@ categories:
     fail_count: 6
     total: 7
     pass_rate: 14
-    last_failure_url: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.20-e2e-rosa-hcp-ovn/2103663413963001856
-    last_failure_date: '2026-09-26'
-    failure_classification: conformance skip list
-    consecutive_failures: 1
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: OCP 4.20 conformance regression
+    consecutive_failures: 0
     failing_tests:
-    - '[sig-network] Services should be able to change the type from ExternalName to ClusterIP'
-    - '[sig-network] Services should be able to change the type from ExternalName to NodePort'
-    - '[sig-network] Services should be able to change the type from NodePort to ExternalName'
-    - '[sig-network] Services should be able to create a functioning NodePort service'
-    - '[sig-storage] CSI Mock volume expansion CSI Volume expansion should expand volume without restarting pod'
-    - '[sig-storage] CSI Volumes CSI Topology test using GCE PD driver [Serial] should provision zonal PD with immediate binding'
-    - '[sig-storage] In-tree Volumes NFS should be mountable'
-    - '[sig-storage] PersistentVolumes CSI Default StorageClass should be created'
-    - '[sig-storage] PersistentVolumes CSI Default StorageClass should create and delete'
-    failure_summary: 9 OCP conformance failures in sig-network/sig-storage on 4.20 nightly
-    diagnosis: Tests fail against OCP 4.20.0-0.nightly-2026-09-25-123827. Likely upstream nightly regression, not ROSA-specific.
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - conformance
+    - '[sig-network] DNS should resolve queries using the local DNS endpoint'
+    - '[sig-network] Connectivity Pod Lifecycle'
+    - '[sig-network] EndpointSliceMirroring'
+    - '[sig-network] Services should serve a basic endpoint'
+    - '[sig-network] Services NodePort'
+    - '[sig-node] Pods should not be restarted'
+    - '[sig-node] Pod Container Status'
+    failure_summary: 7 blocking conformance test failures in sig-network and sig-node. 1494 pass, 7 fail.
+    diagnosis: OCP nightly regression affecting sig-network DNS/connectivity/services and sig-node pod lifecycle. Not ROSA-specific.
+    team: *id022
+    labels: *id023
   - name: HCP 4.21
     prow_job: periodic-ci-openshift-release-main-nightly-4.21-e2e-rosa-hcp-ovn
     gating: false
@@ -2369,14 +1791,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - conformance
+    team: *id022
+    labels: *id023
   - name: HCP 4.22
     prow_job: periodic-ci-openshift-release-main-nightly-4.22-e2e-rosa-hcp-ovn
     gating: false
@@ -2391,21 +1807,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - conformance
+    team: *id022
+    labels: *id023
   - name: HCP 5.0
     prow_job: periodic-ci-openshift-release-main-nightly-5.0-e2e-rosa-hcp-ovn
     gating: false
-    pass_count: 3
-    fail_count: 4
+    pass_count: 4
+    fail_count: 3
     total: 7
-    pass_rate: 43
+    pass_rate: 57
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2413,14 +1823,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - conformance
+    team: *id022
+    labels: *id023
   - name: HCP 5.1
     prow_job: periodic-ci-openshift-release-main-nightly-5.1-e2e-rosa-hcp-ovn
     gating: false
@@ -2435,17 +1839,11 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - conformance
+    team: *id022
+    labels: *id023
 - id: classic-conformance
   name: Classic STS Conformance
-  pass_rate: 71
+  pass_rate: 75
   trend: improving
   health: yellow
   jobs:
@@ -2463,12 +1861,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id024
       id: 97412673-7d28-430b-bdee-ce3d1eb702b2
       name: ROSA CI
       slack_channel: wg-rosa-ci-enhancement
       slack_alias: rosa-ci-team
-    labels:
+    labels: &id025
     - ci-failure
     - conformance
   - name: STS 4.20
@@ -2485,14 +1883,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - conformance
+    team: *id024
+    labels: *id025
   - name: STS 4.21
     prow_job: periodic-ci-openshift-release-main-nightly-4.21-e2e-rosa-sts-ovn
     gating: false
@@ -2507,21 +1899,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - conformance
+    team: *id024
+    labels: *id025
   - name: STS 4.22
     prow_job: periodic-ci-openshift-release-main-nightly-4.22-e2e-rosa-sts-ovn
     gating: false
-    pass_count: 4
-    fail_count: 3
+    pass_count: 5
+    fail_count: 2
     total: 7
-    pass_rate: 57
+    pass_rate: 71
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2529,17 +1915,11 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CI
-      slack_channel: wg-rosa-ci-enhancement
-      slack_alias: rosa-ci-team
-    labels:
-    - ci-failure
-    - conformance
+    team: *id024
+    labels: *id025
 - id: rosa-cli-jobs
   name: ROSA CLI E2E
-  pass_rate: 75
+  pass_rate: 76
   trend: improving
   health: yellow
   jobs:
@@ -2547,9 +1927,9 @@ categories:
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-day1-negative-f7
     gating: false
     pass_count: 0
-    fail_count: 1
-    total: 1
-    pass_rate: 0
+    fail_count: 0
+    total: 0
+    pass_rate: -1
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2557,12 +1937,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id026
       id: 97412673-7d28-430b-bdee-ce3d1eb702b2
       name: ROSA CLI/Terraform
       slack_channel: ocm-qe-prow-ci-jobs
       slack_alias: rosa-cli-tf-team
-    labels:
+    labels: &id027
     - ci-failure
     - rosa-cli
   - name: Day-1 Supplemental
@@ -2575,18 +1955,12 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 2
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: HCP ARM
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-arm-f7
     gating: false
@@ -2601,82 +1975,10 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: HCP Advanced
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-advanced-f3
-    gating: false
-    pass_count: 3
-    fail_count: 0
-    total: 3
-    pass_rate: 100
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
-  - name: HCP Advanced Regional
-    prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-advanced-regional-f3
-    gating: false
-    pass_count: 0
-    fail_count: 1
-    total: 1
-    pass_rate: 0
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
-  - name: HCP External Auth
-    prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-external-auth-f3
-    gating: false
-    pass_count: 2
-    fail_count: 1
-    total: 3
-    pass_rate: 67
-    last_failure_url: ''
-    last_failure_date: ''
-    failure_classification: ''
-    consecutive_failures: 0
-    failing_tests: []
-    failure_summary: ''
-    diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
-  - name: HCP Private Link
-    prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-private-link-f3
     gating: false
     pass_count: 2
     fail_count: 0
@@ -2689,14 +1991,56 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
+  - name: HCP Advanced Regional
+    prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-advanced-regional-f3
+    gating: false
+    pass_count: 0
+    fail_count: 1
+    total: 1
+    pass_rate: 0
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: ''
+    consecutive_failures: 1
+    failing_tests: []
+    failure_summary: ''
+    diagnosis: ''
+    team: *id026
+    labels: *id027
+  - name: HCP External Auth
+    prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-external-auth-f3
+    gating: false
+    pass_count: 1
+    fail_count: 1
+    total: 2
+    pass_rate: 50
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: ''
+    consecutive_failures: 0
+    failing_tests: []
+    failure_summary: ''
+    diagnosis: ''
+    team: *id026
+    labels: *id027
+  - name: HCP Private Link
+    prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-private-link-f3
+    gating: false
+    pass_count: 3
+    fail_count: 0
+    total: 3
+    pass_rate: 100
+    last_failure_url: ''
+    last_failure_date: ''
+    failure_classification: ''
+    consecutive_failures: 0
+    failing_tests: []
+    failure_summary: ''
+    diagnosis: ''
+    team: *id026
+    labels: *id027
   - name: HCP Shared VPC
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-shared-vpc-f3
     gating: false
@@ -2711,14 +2055,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: HCP Upgrade Y-Stream
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-upgrade-y-stream-f3
     gating: false
@@ -2733,20 +2071,14 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: HCP Upgrade Z-Stream
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-hcp-upgrade-z-stream-f3
     gating: false
-    pass_count: 2
+    pass_count: 3
     fail_count: 0
-    total: 2
+    total: 3
     pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
@@ -2755,21 +2087,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: Non-STS Advanced (Critical/High)
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-non-sts-advanced-critical-high-f3
     gating: false
     pass_count: 1
-    fail_count: 1
-    total: 2
-    pass_rate: 50
+    fail_count: 2
+    total: 3
+    pass_rate: 33
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2777,21 +2103,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: Non-STS Upgrade Y-Stream
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-non-sts-upgrade-y-stream-f7
     gating: false
     pass_count: 0
-    fail_count: 1
-    total: 1
-    pass_rate: 0
+    fail_count: 0
+    total: 0
+    pass_rate: -1
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2799,21 +2119,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: OCM Resources
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-ocm-resources-f3
     gating: false
     pass_count: 1
-    fail_count: 1
-    total: 2
-    pass_rate: 50
+    fail_count: 2
+    total: 3
+    pass_rate: 33
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2821,14 +2135,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: STS Advanced
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-sts-advanced-f3
     gating: false
@@ -2843,21 +2151,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: STS Hibernation
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-sts-hibernation-f14
     gating: false
     pass_count: 0
     fail_count: 0
     total: 0
-    pass_rate: 0
+    pass_rate: -1
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -2865,14 +2167,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: STS Private Link
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-sts-private-link-f3
     gating: false
@@ -2887,14 +2183,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: STS Shared VPC
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-sts-shared-vpc-f3
     gating: false
@@ -2909,14 +2199,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: STS Shared VPC Upgrade Y-Stream
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-sts-shared-vpc-upgrade-y-stream-f3
     gating: false
@@ -2931,20 +2215,14 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: STS Upgrade Y-Stream
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-sts-upgrade-y-stream-f3
     gating: false
-    pass_count: 2
+    pass_count: 3
     fail_count: 0
-    total: 2
+    total: 3
     pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
@@ -2953,14 +2231,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
   - name: STS Upgrade Z-Stream
     prow_job: periodic-ci-openshift-rosa-master-e2e-rosa-sts-upgrade-z-stream-f3
     gating: false
@@ -2975,14 +2247,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - rosa-cli
+    team: *id026
+    labels: *id027
 - id: sre-operator-e2e
   name: SRE Operator E2E
   pass_rate: 66
@@ -3003,7 +2269,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id028
       id: a0f44498-f22b-4cd4-a98f-f298cc375a94
       name: ROSA Rocket
       slack_channel: hcm-sre-team-rocket
@@ -3024,11 +2290,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - route-monitor-operator
   - name: CAMO Promotion INT
@@ -3045,11 +2307,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - configure-alertmanager-operator
   - name: CAMO Promotion STG
@@ -3066,11 +2324,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - configure-alertmanager-operator
   - name: AVO Promotion INT
@@ -3079,7 +2333,7 @@ categories:
     pass_count: 0
     fail_count: 0
     total: 0
-    pass_rate: 0
+    pass_rate: -1
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -3087,11 +2341,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - aws-vpce-operator
   - name: AVO Promotion STG
@@ -3108,11 +2358,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - aws-vpce-operator
   - name: MUO Promotion INT
@@ -3129,11 +2375,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - managed-upgrade-operator
   - name: MUO Promotion STG
@@ -3150,11 +2392,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - managed-upgrade-operator
   - name: OAO Promotion INT
@@ -3171,11 +2409,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - ocm-agent-operator
   - name: OAO Promotion STG
@@ -3192,11 +2426,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - ocm-agent-operator
   - name: OME Promotion INT
@@ -3213,11 +2443,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - osd-metrics-exporter
   - name: OME Promotion STG
@@ -3234,11 +2460,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - osd-metrics-exporter
   - name: SFO Promotion INT
@@ -3255,11 +2477,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - splunk-forwarder-operator
   - name: SFO Promotion STG
@@ -3276,11 +2494,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - splunk-forwarder-operator
   - name: Certman Promotion INT
@@ -3297,11 +2511,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - certman-operator
   - name: Certman Promotion STG
@@ -3318,11 +2528,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - certman-operator
   - name: CIO Promotion INT
@@ -3339,11 +2545,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - cloud-ingress-operator
   - name: CIO Promotion STG
@@ -3360,11 +2562,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - cloud-ingress-operator
   - name: RPO Promotion INT
@@ -3381,11 +2579,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - rbac-permissions-operator
   - name: RPO Promotion STG
@@ -3402,11 +2596,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - rbac-permissions-operator
   - name: AAO Promotion INT
@@ -3423,11 +2613,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - aws-account-operator
   - name: AAO Promotion STG
@@ -3444,11 +2630,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - aws-account-operator
   - name: MCVW Promotion INT
@@ -3465,11 +2647,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - managed-cluster-validating-webhooks
   - name: MCVW Promotion STG
@@ -3486,11 +2664,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - managed-cluster-validating-webhooks
   - name: RMO GCP INT
@@ -3507,11 +2681,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - route-monitor-operator
   - name: RMO GCP STG
@@ -3528,11 +2698,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - route-monitor-operator
   - name: CAMO GCP INT
@@ -3549,11 +2715,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - configure-alertmanager-operator
   - name: CAMO GCP STG
@@ -3570,11 +2732,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - configure-alertmanager-operator
   - name: MUO GCP INT
@@ -3591,11 +2749,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - managed-upgrade-operator
   - name: MUO GCP STG
@@ -3612,11 +2766,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - managed-upgrade-operator
   - name: OAO GCP INT
@@ -3633,11 +2783,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - ocm-agent-operator
   - name: OAO GCP STG
@@ -3654,11 +2800,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - ocm-agent-operator
   - name: SFO GCP INT
@@ -3675,11 +2817,7 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - splunk-forwarder-operator
   - name: SFO GCP STG
@@ -3696,16 +2834,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: a0f44498-f22b-4cd4-a98f-f298cc375a94
-      name: ROSA Rocket
-      slack_channel: hcm-sre-team-rocket
-      slack_alias: sd-srep-team-rocket
+    team: *id028
     labels:
     - splunk-forwarder-operator
 - id: terraform-provider-rhcs-jobs
   name: ROSA TF E2E
-  pass_rate: 82
+  pass_rate: 84
   trend: stable
   health: green
   jobs:
@@ -3723,12 +2857,12 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
+    team: &id029
       id: 97412673-7d28-430b-bdee-ce3d1eb702b2
       name: ROSA CLI/Terraform
       slack_channel: ocm-qe-prow-ci-jobs
       slack_alias: rosa-cli-tf-team
-    labels:
+    labels: &id030
     - ci-failure
     - terraform-provider-rhcs
   - name: HCP Advanced
@@ -3745,14 +2879,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: HCP Arm
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-hcp-arm-f7
     gating: false
@@ -3763,25 +2891,19 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 1
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: HCP Encryption
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-hcp-encryption-f7
     gating: false
-    pass_count: 1
+    pass_count: 0
     fail_count: 0
-    total: 1
-    pass_rate: 100
+    total: 0
+    pass_rate: -1
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -3789,14 +2911,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: HCP Full Resources
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-hcp-full-resource-f7
     gating: false
@@ -3811,21 +2927,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: HCP Network
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-hcp-network-f7
     gating: false
-    pass_count: 1
+    pass_count: 0
     fail_count: 0
-    total: 1
-    pass_rate: 100
+    total: 0
+    pass_rate: -1
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -3833,21 +2943,15 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: HCP Private
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-hcp-private-f3
     gating: false
     pass_count: 1
-    fail_count: 2
-    total: 3
-    pass_rate: 33
+    fail_count: 1
+    total: 2
+    pass_rate: 50
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
@@ -3855,14 +2959,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: HCP Upgrade Y-Stream
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-hcp-upgrade-y-f7
     gating: false
@@ -3877,14 +2975,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: HCP Upgrade Z-Stream
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-hcp-upgrade-z-f7
     gating: false
@@ -3895,24 +2987,18 @@ categories:
     last_failure_url: ''
     last_failure_date: ''
     failure_classification: ''
-    consecutive_failures: 0
+    consecutive_failures: 1
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: STS Advanced
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-sts-advanced-f3
     gating: false
-    pass_count: 2
+    pass_count: 3
     fail_count: 0
-    total: 2
+    total: 3
     pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
@@ -3921,14 +3007,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: STS Advanced (Day-1 Negative)
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-sts-advanced-day1-negative-f7
     gating: false
@@ -3943,14 +3023,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: STS Classic Full Resources
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-classic-full-resource-f7
     gating: false
@@ -3965,20 +3039,14 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: STS Private
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-sts-private-f3
     gating: false
-    pass_count: 3
+    pass_count: 2
     fail_count: 0
-    total: 3
+    total: 2
     pass_rate: 100
     last_failure_url: ''
     last_failure_date: ''
@@ -3987,14 +3055,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: STS Private (Day-1 Negative)
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-sts-private-day1-negative-f7
     gating: false
@@ -4009,14 +3071,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: STS Shared VPC
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-sts-shared-vpc-f3
     gating: false
@@ -4031,14 +3087,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: STS Upgrade Y-Stream
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-sts-upgrade-y-f7
     gating: false
@@ -4053,14 +3103,8 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
   - name: STS Upgrade Z-Stream
     prow_job: periodic-ci-terraform-redhat-terraform-provider-rhcs-main-e2e-rosa-sts-upgrade-z-f7
     gating: false
@@ -4075,11 +3119,5 @@ categories:
     failing_tests: []
     failure_summary: ''
     diagnosis: ''
-    team:
-      id: 97412673-7d28-430b-bdee-ce3d1eb702b2
-      name: ROSA CLI/Terraform
-      slack_channel: ocm-qe-prow-ci-jobs
-      slack_alias: rosa-cli-tf-team
-    labels:
-    - ci-failure
-    - terraform-provider-rhcs
+    team: *id029
+    labels: *id030
