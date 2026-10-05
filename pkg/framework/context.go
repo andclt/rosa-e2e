@@ -40,6 +40,11 @@ type TestContext struct {
 	scKubeClient    kubernetes.Interface
 	scDynamicClient dynamic.Interface
 
+	// Backplane hosted-cluster client (set when BP_KUBECONFIG is configured)
+	bpRestConfig    *rest.Config
+	bpKubeClient    kubernetes.Interface
+	bpDynamicClient dynamic.Interface
+
 	// Resolved HCP namespaces on the MC (set after ResolveHCPNamespaces)
 	hcpNamespaces *HCPNamespaces
 
@@ -258,6 +263,50 @@ func (tc *TestContext) SCDynamicClient() dynamic.Interface {
 	return tc.scDynamicClient
 }
 
+// InitBPClients initializes kube and dynamic clients for the hosted (guest) cluster using the
+// backplane-provided kubeconfig at BP_KUBECONFIG (${SHARED_DIR}/bp-kubeconfig in CI, per the
+// ROSAENG-67580 SHARED_DIR contract).
+//
+// Unlike InitHCClients, which falls back to the OCM credentials API, this uses only the backplane
+// kubeconfig and requires BP_KUBECONFIG to be set. Backplane reaches the hosted cluster through the
+// corp proxy, so it is the customer-plane credential that works even for private-link clusters
+// whose API server is not routable from the test runner.
+func (tc *TestContext) InitBPClients() error {
+	kubeconfigPath := os.Getenv("BP_KUBECONFIG")
+	if kubeconfigPath == "" {
+		return fmt.Errorf("BP_KUBECONFIG not set; run rosa-backplane-login to produce ${SHARED_DIR}/bp-kubeconfig")
+	}
+
+	restCfg, err := clientcmd.BuildConfigFromFlags("", kubeconfigPath)
+	if err != nil {
+		return fmt.Errorf("loading backplane kubeconfig from BP_KUBECONFIG=%s: %w", kubeconfigPath, err)
+	}
+	tc.bpRestConfig = restCfg
+
+	kubeClient, err := NewKubeClient(restCfg)
+	if err != nil {
+		return fmt.Errorf("creating backplane kube client: %w", err)
+	}
+	tc.bpKubeClient = kubeClient
+
+	dynClient, err := dynamic.NewForConfig(restCfg)
+	if err != nil {
+		return fmt.Errorf("creating backplane dynamic client: %w", err)
+	}
+	tc.bpDynamicClient = dynClient
+	return nil
+}
+
+// BPKubeClient returns the backplane hosted-cluster kube client, or nil if not initialized.
+func (tc *TestContext) BPKubeClient() kubernetes.Interface {
+	return tc.bpKubeClient
+}
+
+// BPDynamicClient returns the backplane hosted-cluster dynamic client, or nil if not initialized.
+func (tc *TestContext) BPDynamicClient() dynamic.Interface {
+	return tc.bpDynamicClient
+}
+
 // Topology returns the cluster topology, detecting it from OCM if needed.
 // Returns "hcp", "classic", or "osd-gcp".
 func (tc *TestContext) Topology() string {
@@ -299,6 +348,11 @@ func (tc *TestContext) IsOSDGCP() bool {
 // HasSCAccess returns true if the service cluster ID is configured.
 func (tc *TestContext) HasSCAccess() bool {
 	return tc.cfg.ServiceClusterID != ""
+}
+
+// HasBPAccess returns true if a backplane hosted-cluster kubeconfig is configured via BP_KUBECONFIG.
+func (tc *TestContext) HasBPAccess() bool {
+	return os.Getenv("BP_KUBECONFIG") != ""
 }
 
 // HasMCAccess returns true if MC credentials are explicitly configured via
